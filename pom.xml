@@ -93,7 +93,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
@@ -126,13 +125,6 @@
             <version>1.1.10</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.mybatis.generator/mybatis-generator-core -->
-        <!--<dependency>-->
-        <!--<groupId>org.mybatis.generator</groupId>-->
-        <!--<artifactId>mybatis-generator-core</artifactId>-->
-        <!--<version>1.3.5</version>-->
-        <!--</dependency>-->
-
         <!--过滤emoji字符-->
         <dependency>
             <groupId>com.vdurmont</groupId>
@@ -140,7 +132,6 @@
             <version>4.0.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -206,5 +197,4 @@
         </plugins>
     </build>-->
     <!-- 结合docker的maven打包方式,并上传提交创建的镜像 -->
-
 </project>
