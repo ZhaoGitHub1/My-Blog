@@ -5,15 +5,8 @@
 
     <groupId>com.my.blog.website</groupId>
     <artifactId>my-blog</artifactId>
-    <!-- now -->
-    <version>3.3.0-SNAPSHOT</version>
-    <!-- version的时间节点-->
-    <!-- Tale -->
-    <!--<version>0.0.1-SNAPSHOT</version>-->
-    <!-- springboot -->
-    <!--<version>1.0.1-SNAPSHOT</version>-->
-    <!-- docker -->
-    <!--<version>2.0.1-SNAPSHOT</version>-->
+    <version>1.0.0-SNAPSHOT</version>
+
     <packaging>jar</packaging>
 
     <name>my-blog</name>
@@ -22,8 +15,8 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.1.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>2.0.4.RELEASE</version>
+        <relativePath/>
     </parent>
 
     <properties>
@@ -125,8 +118,19 @@
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
-            <version>1.1.0</version>
+            <version>1.2.5</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-autoconfigure</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
 
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -164,7 +168,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
-            <version>1.5.14.RELEASE</version>
             <optional>true</optional>
             <scope>runtime</scope>
         </dependency>
