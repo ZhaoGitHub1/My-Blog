@@ -17,7 +17,7 @@ public class GlobalExceptionHandler {
     public String tipException(Exception e) {
         LOGGER.error("find exception:e={}",e.getMessage());
         e.printStackTrace();
-        return "comm/error_500";
+        return "common/error_500";
     }
 
 
@@ -25,6 +25,6 @@ public class GlobalExceptionHandler {
     public String exception(Exception e){
         LOGGER.error("find exception:e={}",e.getMessage());
         e.printStackTrace();
-        return "comm/error_404";
+        return "common/error_404";
     }
 }

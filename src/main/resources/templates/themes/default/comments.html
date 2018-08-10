@@ -7,9 +7,11 @@
             <div th:if="${article.allowComment}">
                 <span class="response">
                 <th:block th:if="${session.login_user}">
-                    Hi，<a th:href="${session.login_user.homeUrl}" data-no-instant=""
-                          th:text="${session.login_user.username}"></a>
-                    如果你想 <a href="/logout" title="注销" data-no-instant="">注销</a> ?
+                    Hi，
+                    <a th:href="${session.login_user.homeUrl}" data-no-instant="" th:text="${session.login_user.username}"></a>
+                    你可以点击
+                    <a href="/logout" title="注销" data-no-instant="">这里</a>
+                    注销当前登录账号。
                 </th:block>
             </span>
                 <form method="post" id="comment-form" class="comment-form" role="form"
@@ -89,5 +91,5 @@
     </div>
 </div>
 </body>
-<div th:replace="comm/tale_comment::tale_comment"></div>
+<div th:replace="common/blog_comment::blog_comment"></div>
 </html>
