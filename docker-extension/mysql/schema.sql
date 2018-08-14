@@ -120,8 +120,8 @@ LOCK TABLES `t_options` WRITE;
 INSERT INTO `t_options` (`name`, `value`, `description`)
 VALUES
 	('site_title','My Blog',''),
-	('social_weibo','',NULL),
-	('social_zhihu','',NULL),
+	('social_csdn','',NULL),
+	('social_gitee','',NULL),
 	('social_github','',NULL),
 	('social_twitter','',NULL),
 	('site_theme','default',NULL),
