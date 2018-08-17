@@ -28,6 +28,8 @@ My Blog是由(docker)+SpringBoot+Mybatis+thymeleaf等技术实现的Java博客�
   - [ ] 相关文章推荐
   - [ ] 热门文章（热评、热读） 
   - [ ] 支持专栏
+  - [ ] 自定义文章封面
+  - [ ] 文件分类存储
   - [ ] ...
 - 后台管理
   - [x] 仪表盘
