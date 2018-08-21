@@ -19,7 +19,6 @@ My Blog是由(docker)+SpringBoot+Mybatis+thymeleaf等技术实现的Java博客�
   - [x] 友链
   - [x] 关于
   - [x] 搜索
-  - [ ] 打赏支持
   - [ ] 常用网站
   - [ ] 表情评论、动图评论支持
   - [ ] 第三方登录
@@ -30,6 +29,7 @@ My Blog是由(docker)+SpringBoot+Mybatis+thymeleaf等技术实现的Java博客�
   - [ ] 支持专栏
   - [ ] 自定义文章封面
   - [ ] 文件分类存储
+  - [ ] 打赏支持
   - [ ] ...
 - 后台管理
   - [x] 仪表盘
