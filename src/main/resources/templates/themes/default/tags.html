@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:replace="themes/default/header::header(title='标签',keywords=null)"></div>
+<body>
+<div class="main-content archive-page clearfix">
+    <div class="categorys-item">
+        <div class="post-lists-body">
+            <div class="post-content">
+                <th:block th:each="c : ${tags}">
+                    <span class="post-tags" data-toggle="dropdown" aria-expanded="false">
+                        <a th:href="${commons.site_url('/tag/')}+${c.name}" th:attr="mid=${c.mid}">
+                            <th:block th:text="${c.name}" />
+                            <th:block th:text="' ('+${c.count}+')'"/>
+                        </a>
+                    </span>
+                </th:block>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<div th:replace="themes/default/footer::footer"></div>
+</html>

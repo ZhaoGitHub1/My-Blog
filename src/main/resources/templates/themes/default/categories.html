@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:replace="themes/default/header::header(title='分类',keywords=null)"></div>
+<body>
+<div class="main-content archive-page clearfix">
+    <div class="categorys-item">
+        <div class="post-lists-body">
+            <div class="post-content">
+                <th:block th:each="c : ${categories}">
+                    <th:block th:if="${c.name == '默认分类'}">
+                        <span class="post-tags" data-toggle="dropdown" aria-expanded="false">
+                            <a th:href="${commons.site_url('/category/')}+${c.name}" th:attr="mid=${c.mid}">
+                                <th:block th:text="${c.name}"/>
+                                <th:block th:text="' ('+${c.count}+')'"/>
+                            </a>
+                        </span>
+                    </th:block>
+                    <th:block th:unless="${c.name == '默认分类'}">
+                        <span class="post-tags" data-toggle="dropdown" aria-expanded="false">
+                            <a th:href="${commons.site_url('/category/')}+${c.name}" th:attr="mid=${c.mid}">
+                                <th:block th:text="${c.name}"/>
+                                <th:block th:text="' ('+${c.count}+')'"/>
+                            </a>
+                        </span>
+                    </th:block>
+                </th:block>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<div th:replace="themes/default/footer::footer"></div>
+</html>

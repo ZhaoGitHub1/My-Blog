@@ -281,6 +281,25 @@ public class IndexController extends BaseController {
         request.setAttribute("archives", archives);
         return this.render("archives");
     }
+    /**
+     * 分类页面
+     */
+    @GetMapping(value = "categories")
+    public String categories(HttpServletRequest request) {
+        List<MetaDto> categories = metaService.getMetaList(Types.CATEGORY.getType(), null, WebConst.MAX_POSTS);
+        request.setAttribute("categories", categories);
+        return this.render("categories");
+    }
+
+    /**
+     * 标签页面
+     */
+    @GetMapping(value = "tags")
+    public String tags(HttpServletRequest request) {
+        List<MetaDto> tags = metaService.getMetaList(Types.TAG.getType(), null, WebConst.MAX_POSTS);
+        request.setAttribute("tags", tags);
+        return this.render("tags");
+    }
 
     /**
      * 友链页
@@ -297,7 +316,7 @@ public class IndexController extends BaseController {
     /**
      * 自定义页面,如关于的页面
      */
-    @GetMapping(value = "/{pagename}")
+    @GetMapping(value = "/custom/{pagename}")
     public String page(@PathVariable String pagename, HttpServletRequest request) {
         ContentVo contents = contentService.getContents(pagename);
         if (null == contents) {
